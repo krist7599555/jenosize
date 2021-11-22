@@ -93,8 +93,8 @@ const Game24Controller = {
   }
 }
 
-router.get('/jenosize/:place', async (request) => {
-  const data = await JenosizeController.find_place(request.params.place);
+router.get('/jenosize/place', async (request) => {
+  const data = await JenosizeController.find_place(request.query.q);
   return json(data)
 })
 
@@ -139,9 +139,10 @@ router.get('/', async () => {
     message: "font end วุ่นวายเกิน บ้าจริง",
     git: "https://github.com/krist7599555/jenosize",
     api: [
-      '/jenosize/:place',
-      '/game24/:num1/:num2/:num3/:num4',
-      '/auth/login',
+      'GET /jenosize/place?q=ดรีมเวิล',
+      'GET /game24/:num1/:num2/:num3/:num4',
+      'GET /game24/8/1/1/5',
+      'POST /auth/login',
     ]
   });
 })
