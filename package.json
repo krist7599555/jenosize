@@ -3,12 +3,13 @@
   "name": "app",
   "version": "1.0.0",
   "description": "A template for kick starting a Cloudflare Workers project",
-  "main": "index.js",
+  "main": "dist/worker.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write '**/*.{js,css,json,md}'",
     "dev": "NODE_OPTIONS=--openssl-legacy-provider wrangler dev",
+    "predeploy": "npm run build",
     "deploy": "NODE_OPTIONS=--openssl-legacy-provider wrangler publish"
   },
   "author": "krist7599555 <krist7599555@gmail.com>",

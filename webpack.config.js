@@ -3,6 +3,7 @@ const path = require('path')
 module.exports = {
   target: "webworker",
   entry: "./src/index.ts",
+  mode: 'production',
   output: {
     filename: 'worker.js',
     path: path.join(__dirname, 'dist'),

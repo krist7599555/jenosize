@@ -1,5 +1,6 @@
 name = "jenosize"
 type = "javascript"
+# type = "webpack"
 # webpack_config = "webpack.config.js"
 
 account_id = "a2066c72b45c4f070d95a9af1c3d56a7"
