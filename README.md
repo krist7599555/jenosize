@@ -12,3 +12,6 @@ base on: https://developers.cloudflare.com/workers/tutorials/postgres
 ![image](https://user-images.githubusercontent.com/19445033/142917281-2aa45563-4999-4433-8445-6e1ed944e777.png)
 ![image](https://user-images.githubusercontent.com/19445033/142917290-25f413b0-233a-4d95-9dfb-aa0433ddff7d.png)
 ![image](https://user-images.githubusercontent.com/19445033/142917302-9baf3d63-2f9e-4391-b07d-4c546c2a12ec.png)
+
+# Resource
+- ts template https://github.com/cloudflare/worker-typescript-template/blob/master/tsconfig.json

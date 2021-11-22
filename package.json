@@ -5,6 +5,7 @@
   "description": "A template for kick starting a Cloudflare Workers project",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write '**/*.{js,css,json,md}'",
     "dev": "NODE_OPTIONS=--openssl-legacy-provider wrangler dev",
@@ -13,10 +14,16 @@
   "author": "krist7599555 <krist7599555@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "@cloudflare/workers-types": "^3.2.0",
+    "@types/itty-router-extras": "^0.4.0",
+    "@types/service-worker-mock": "^2.0.1",
+    "prettier": "^1.18.2",
+    "ts-loader": "^9.2.6",
+    "webpack-cli": "^4.9.1"
   },
   "dependencies": {
     "itty-router": "^2.4.4",
-    "itty-router-extras": "^0.4.2"
+    "itty-router-extras": "^0.4.2",
+    "webpack": "^5.64.2"
   }
 }
